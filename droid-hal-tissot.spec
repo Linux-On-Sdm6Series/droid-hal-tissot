@@ -11,18 +11,23 @@
 
 %define droid_target_aarch64 1
 
+%define android_config \
+#define QCOM_BSP 1\
+#define QTI_BSP 1\
+%{nil}
+
 %define straggler_files \
-   /bugreports\
-   /cache\
-   /d\
-   /file_contexts.bin\
-   /init.qcom.sh\
-   /init.qcom.usb.sh\
-   /property_contexts\
-   /sdcard\
-   /selinux_version\
-   /service_contexts\
-   /vendor\
+/bugreports\
+/cache\
+/d\
+/file_contexts.bin\
+/init.qcom.sh\
+/init.qcom.usb.sh\
+/property_contexts\
+/sdcard\
+/selinux_version\
+/service_contexts\
+/vendor\
 %{nil}
 
 %include rpm/dhd/droid-hal-device.inc
