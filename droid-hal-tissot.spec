@@ -14,6 +14,7 @@
 %define android_config \
 #define QCOM_BSP 1\
 #define QTI_BSP 1\
+#define WANT_ADRENO_QUIRKS 1\
 %{nil}
 
 %define straggler_files \
